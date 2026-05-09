@@ -128,7 +128,7 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.mediatek
+    android.hardware.memtrack-service.mediatek-mali
 
 PRODUCT_PACKAGES += \
     gralloc.default \

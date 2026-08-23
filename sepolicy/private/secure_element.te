@@ -1,1 +1,0 @@
-dontaudit secure_element system_data_file:dir { create add_name };

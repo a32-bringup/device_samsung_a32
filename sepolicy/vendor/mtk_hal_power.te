@@ -1,4 +1,0 @@
-allow mtk_hal_power hal_camera_default:dir { getattr search };
-allow mtk_hal_power hal_camera_default:file r_file_perms;
-
-get_prop(mtk_hal_power, vendor_thermal_prop)

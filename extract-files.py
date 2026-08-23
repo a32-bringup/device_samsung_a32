@@ -23,6 +23,7 @@ namespace_imports = [
     'vendor/samsung/a32',
     'hardware/mediatek',
     'hardware/samsung',
+    'device/samsung/mt6768-common',
 ]
 
 lib_fixups: lib_fixups_user_type = {
@@ -106,5 +107,7 @@ module = ExtractUtilsModule(
 )
 
 if __name__ == '__main__':
-    utils = ExtractUtils.device(module)
+    utils = ExtractUtils.device_with_common(
+        module, 'mt6768-common', module.vendor
+    )
     utils.run()
